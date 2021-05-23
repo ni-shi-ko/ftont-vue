@@ -58,39 +58,39 @@ export default {
 </script>
 
 <style scoped>
-  .left {
-    width: 22%;
-    height: 100vh;
-  }
-  .right {
-    width: 78%;
-    height: 100vh;
-  }
-  .flex {
-    display: flex;
-  }
-  .profile {
-    padding: 20px;
-    border-bottom: 1px solid white;
-    border-left: 1px solid white;
-  }
-  .profile-name {
-    font-size: 24px;
-  }
-  .title {
-    border-bottom: 1px solid white;
-    border-left: 1px solid white;
-    padding: 15px;
-  }
-  .title p {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  .flex-profile {
-    display: flex;
-    justify-content: space-between;
-  }
-  button {
+.left {
+  width: 22%;
+  height: 100vh;
+}
+.right {
+  width: 78%;
+  height: 100vh;
+}
+.flex {
+  display: flex;
+}
+.profile {
+  padding: 20px;
+  border-bottom: solid 1px white;
+  border-left: 1px solid white;
+}
+.profile-name {
+  font-size: 24px;
+}
+.title {
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  padding: 15px;
+}
+.title p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.flex-profile {
+  display: flex;
+  justify-content: space-between;
+}
+button {
   width: 100px;
   text-align: center;
   padding: 8px 0 10px;
@@ -100,7 +100,7 @@ export default {
   display: block;
   margin: 0 0 0 auto;
 }
- input {
-   color: black;
- }
+input {
+  color: black;
+}
 </style>
