@@ -86,7 +86,7 @@ export default {
       axios
         .delete(
           "https://stark-citadel-67637.herokuapp.com/api/shares/" +
-          this.shares[index].item.id
+           this.shares[index].item.id
         )
         .then((response) => {
           console.log(response);
@@ -101,7 +101,7 @@ export default {
       const shares = await axios.get(
         "https://stark-citadel-67637.herokuapp.com/api/shares"
       );
-      for (let i = 0; i < shares.data.data.length; i ++) {
+      for (let i = 0; i < shares.data.data.length; i++) {
         await axios
           .get(
             "https://stark-citadel-67637.herokuapp.com/api/shares/" +
