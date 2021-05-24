@@ -34,6 +34,7 @@ import HeaderAuth from '../components/HeaderAuth';
   }
 };
 </script>
+
 <style scoped>
   button {
     width: 100px;

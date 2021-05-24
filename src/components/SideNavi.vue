@@ -1,17 +1,17 @@
 <template>
   <div>
     <div class="left-padding">
-      <img src="../assets/assets/logo.png" class="logo" />
+      <img src="../assets/logo.png" class="logo" />
       <div class="flex icon-field" @click="$router.push('/home')">
-        <img src="../assets/assets/home.png" class="icon" />
+        <img src="../assets/home.png" class="icon" />
         <p>ホーム</p>
       </div>
       <div class="flex icon-field" @click="$router.push('/profile')">
-        <img src="../assets/assets/profile.png" class="icon" />
+        <img src="../assets/profile.png" class="icon" />
         <p>プロフィール</p>
       </div>
       <div class="flex icon-field" @click="$router.dispatch('logout')">
-        <img src="../assets/assets/logout.png"  class="icon" />
+        <img src="../assets/logout.png"  class="icon" />
         <p>ログアウト</p>
       </div>
     </div>

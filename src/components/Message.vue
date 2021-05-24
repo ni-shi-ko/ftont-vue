@@ -4,17 +4,17 @@
       <div class="message">
         <div class="flex">
           <p class="name">{{value.name}}</p>
-          <img src="../assets/assets/heart.png" class="icon" @click="fav(index)" alt/>
+          <img src="../assets/heart.png" class="icon" @click="fav(index)" alt/>
           <p class="number">{{value.like.length}}</p>
           <img 
-            src="../assets/assets/cross.png"  
+            src="../assets/cross.png"  
             class="icon" 
             @click="del(index)"
             alt
             v-if="path && profile"
             />
           <img 
-            src="../assets/assets/detail.png"  
+            src="../assets/detail.png"  
             class="icon detail" 
             @click="
               $router.push({
