@@ -13,7 +13,7 @@
             alt
             v-if="path && profile"
             />
-          <img 
+          <img
             src="../assets/detail.png"  
             class="icon detail" 
             @click="
@@ -53,7 +53,7 @@ export default {
           if (element.user_id == this.$store.state.user.id) {
             axios({
               method: "delete",
-              urlhttps: "https://stark-citadel-67637.herokuapp.com/api/like",
+              url: "https://stark-citadel-67637.herokuapp.com/api/like",
               data: {
                 share_id: this.shares[index].item.id,
                 user_id: this.$store.state.user.id,
@@ -108,11 +108,11 @@ export default {
             shares.data.data[i].id
           )
           .then((response) => {
-            if (this.$router.name == "profile") {
+            if (this.$route.name == "profile") {
               if (response.data.item.user_id == this.$store.state.user.id) {
                 data.push(response.data);
               }
-            } else if (this.$router.name == "detail") {
+            } else if (this.$route.name == "detail") {
               if (response.data.item.id == this.id) {
                 data.push(response.data);
               }
@@ -126,10 +126,10 @@ export default {
     },
   },
   created() {
-    if (this.$router.name === "home") {
+    if (this.$route.name === "home") {
       this.path = false;
     }
-    if (this.$router.name === "detail") {
+    if (this.$route.name === "detail") {
       this.profile = false;
     }
     this.getShares();
@@ -150,8 +150,8 @@ export default {
   }
   .message {
     padding: 20px;
-    border-bottom: 1px solid white;
-    border-left: 1px solid white;
+    border-bottom: solid 1px white;
+    border-left: solid 1px white;
   }
   .name {
     font-size: 18px;

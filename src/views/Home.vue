@@ -16,7 +16,7 @@
 import SideNavi from "../components/SideNavi";
 import Message from "../components/Message";
 export default {
-  components : {
+  components :{
     SideNavi,
     Message
   }

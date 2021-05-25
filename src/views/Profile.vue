@@ -9,12 +9,12 @@
       </div>
       <div class="profile">
         <div class="flex-profile">
-          <p class="profile-name">{{name}}</p>
+          <p class="profile-name">{{ name }}</p>
           <div @click="edit">
             <button>変更する</button>
           </div>
         </div>
-        <p class="text" v-if="active">{{profile}}</p>
+        <p class="text" v-if="active">{{ profile }}</p>
         <input type="text" v-model="profile" v-else />
       </div>
       <Message />
@@ -50,9 +50,9 @@ export default {
       this.active = !this.active;
     },
   },
-  components : {
+  components :{
     SideNavi,
-    Message
+    Message,
   },
 };
 </script>

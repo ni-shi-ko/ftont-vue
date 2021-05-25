@@ -7,17 +7,17 @@
       <div class="title">
         <p>ホーム</p>
       </div>
-      <Message :id= "id" />
+      <Message :id="id" />
       <div class="comment">
         <div class="comment-title">
           <p>コメント</p>
         </div>
-        <div class="message" v-for="(comment,index) in data" :key="index">
+        <div class="message" v-for="(comment, index) in data" :key="index">
           <div class="flex">
-            <p class="name">{{comment.comment_user.name}}</p>
+            <p class="name">{{ comment.comment_user.name }}</p>
           </div>
           <div>
-            <p class="text">{{comment.comment.content}}</p>
+            <p class="text">{{ comment.comment.content }}</p>
           </div>
         </div>
         <input type="text" v-model="content" />
@@ -71,8 +71,8 @@ export default {
   },
   components: {
     SideNavi,
-    Message
-  }
+    Message,
+  },
 };
 </script>
 
