@@ -3,30 +3,30 @@
     <div v-for="(value, index) in shares" :key="index">
       <div class="message">
         <div class="flex">
-          <p class="name">{{value.name}}</p>
-          <img src="../assets/heart.png" class="icon" @click="fav(index)" alt/>
-          <p class="number">{{value.like.length}}</p>
+          <p class="name">{{ value.name }}</p>
+          <img class="icon" src="../assets/heart.png"  @click="fav(index)" alt/>
+          <p class="number">{{ value.like.length }}</p>
           <img 
-            src="../assets/cross.png"  
             class="icon" 
+            src="../assets/cross.png"  
             @click="del(index)"
             alt
             v-if="path && profile"
             />
           <img
-            src="../assets/detail.png"  
             class="icon detail" 
+            src="../assets/detail.png"  
             @click="
               $router.push({
                 path: '/detail/' + value.item.id,
-                params: {id: value.item.id},
+                params: { id: value.item.id },
               })
             "
             alt
              v-if="profile"
              />
         </div>
-        <p class="text">{{value.item.share}}</p>
+        <p class="text">{{ value.item.share }}</p>
       </div>
     </div>
   </div>
