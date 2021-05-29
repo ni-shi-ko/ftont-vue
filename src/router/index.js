@@ -53,7 +53,7 @@ const router = new VueRouter({
   routes,
 });
 
-router.beforeEach((to, from, next) => {
+router.beforeEach((to, from, next) => { //認証するためのコード的な
   if (
     to.matched.some((record) => record.meta.requiresAuth) &&
     !store.state.auth
